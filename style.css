@@ -13,8 +13,8 @@ html {
 
 .products-hero {
   background-color: #323232;
-  height: 1080px;
-  max-height: 100vh;
+  height: auto;
+  /* max-height: 100vh; */
   position: relative;
 }
 
