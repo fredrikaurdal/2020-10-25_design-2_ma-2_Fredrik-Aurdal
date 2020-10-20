@@ -303,16 +303,13 @@ button {
   margin-right: 50px;
 }
 
-.collection .content .images img {
-  margin-bottom: 50px;
-}
-
 .collection .content .images .first {
   justify-self: end;
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 1;
   grid-row-end: 2;
+  position: relative;
 }
 
 .collection .content .images .second {
@@ -321,6 +318,16 @@ button {
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
+  position: relative;
+}
+
+.images .text {
+  margin-top: 15px;
+  margin-left: 15px;
+  position: absolute;
+  color: white;
+  font-size: 18;
+  opacity: 0.9;
 }
 
 .content-wrapper {
