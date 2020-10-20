@@ -295,8 +295,9 @@ button {
 
 .collection .content .images {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
-  column-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 200px 200px;
+  column-gap: 75px;
   justify-content: center;
   margin-left: 50px;
   margin-right: 50px;
@@ -306,30 +307,27 @@ button {
   margin-bottom: 50px;
 }
 
+.collection .content .images .first {
+  justify-self: end;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.collection .content .images .second {
+  justify-self: start;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
 .content-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-.collection-intro {
-  display: inline-grid;
-  grid-template-columns: auto auto auto;
-  align-items: center;
-  justify-content: center;
-  column-gap: 100px;
-  margin-bottom: 45px;
-}
-
-.collection-intro button:hover {
-  text-decoration: none;
-  color: transparent;
-  background-color: #164c4e;
-  color: white;
-  cursor: pointer;
-  border-width: 1px;
-  border-color: #164c4e;
 }
 
 footer {
@@ -453,16 +451,6 @@ footer .number {
 @media only screen and (max-width: 1099px) {
   .collection {
     min-height: 1520px;
-  }
-
-  .collection-intro {
-    grid-template-columns: auto;
-    justify-items: center;
-    row-gap: 10px;
-  }
-
-  .collection-intro h2 {
-    margin: 0;
   }
 }
 
