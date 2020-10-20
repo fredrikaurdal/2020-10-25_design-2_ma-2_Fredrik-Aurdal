@@ -39,10 +39,10 @@ html {
   color: white;
   display: inline-grid;
   grid-template-columns: 209px 50px auto;
-  grid-template-rows: auto;
+  grid-template-rows: auto auto;
   align-self: center;
   z-index: 1;
-
+  row-gap: 15px;
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -61,6 +61,7 @@ html {
   grid-row-end: 1;
   align-self: center;
   z-index: 1;
+  margin: 0;
 }
 
 .products-hero-content .paragraph-block {
@@ -69,6 +70,21 @@ html {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 2;
+}
+
+.hero-text .button {
+  color: #c47145;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  display: inline;
+}
+
+.hero-text .button .underline {
+  border-bottom: 1px solid #c47145;
+  margin-top: 5px;
+  width: 128px;
 }
 
 .hero-button span {
